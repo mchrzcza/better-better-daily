@@ -6,8 +6,10 @@
 <body>
   <button onclick="openRandomCard"()>Open random daily card</button>
   <script>
-    openRandomCard() {
-      window.open("https://www.w3schools.com");
+    function openRandomCard() {
+      const urlEndings = ["h", "i", "j", "j1", "j2", "j3", "j4", "k", "k1", "k2", "k3", "k4", "l", "l1", "l2", "l3", "l4", "m", "m1", "m2", "m3", "m4", "h"];
+      const randomCardNumber = Math.floor(Math.random() * urlEndings.length);
+      window.open(`https://www.leanagile.ninja/better-daily?lightbox=dataItem-kr26nhw${urlEndings[randomCardNumber]}`);
     }
   </script>
 </body>
