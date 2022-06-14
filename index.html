@@ -12,7 +12,8 @@
   text-align: center;
   font-size: 28px;
   padding: 20px;
-  width: 200px;
+  height: 150px;
+  width: 500px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -44,8 +45,8 @@
 }
 </style>
 </head>
-<body style="display: flex; align-items: center; justify-content: center;">
-  <button onclick="openRandomCard"()>Open random daily card</button>
+<body style="display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+  <button class="button" style="vertical-align:middle" onclick="openRandomCard()"><span>Open random daily card</span></button>
   <script>
     function openRandomCard() {
       const urlEndings = ["h", "i", "j", "j1", "j2", "j3", "j4", "k", "k1", "k2", "k3", "k4", "l", "l1", "l2", "l3", "l4", "m", "m1", "m2", "m3", "m4", "h"];
